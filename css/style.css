@@ -1,8 +1,22 @@
 /* COMMON */
-/* color: #fafafa; */
+body {
+    font-family: Open Sans,Segoe UI,Tahoma,sans-serif;
+}
 .small-wrapper {
     max-width: 900px;
     margin: auto;
+}
+.block-centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+img {
+    max-width: 100%;
+}
+p {
+    padding: 15px;
 }
 
 /* HEADER */
@@ -14,11 +28,13 @@ header nav {
     text-align: right;
 }
 header .burger-menu {
-    font-size: 30px;
+    font-size: 20px;
 }
 
+/* Menu */
 .menu {
     list-style-type: none;
+    line-height: 15px;
 }
 .menu li {
     display: inline-block;
@@ -30,18 +46,17 @@ header .burger-menu {
     font-size: 13px;
     color: black;
 }
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Lang */
 .menu.lang li {
     border-right: 1px solid black;
     padding-right: 10px;
 }
 .menu.lang li:last-child {
     border-right: none;
-}
-.block-centered {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* Jumbotron */
@@ -50,4 +65,48 @@ header .burger-menu {
     height: 520px;
     position: relative;
     color: white;
+    text-align: center;
+}
+.jumbotron .teaser {
+    width: 50%;
+}
+.jumbotron a {
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+
+/* MAIN */
+/* Products section */
+#products {
+    padding: 15px 0;
+}
+.col_inner { /* spaziatura colonna */
+    padding: 10px;
+}
+.col_content { /* contenitore degli elementi */
+    text-align: center;
+    padding: 25px;
+    background-color: #fafafa;
+}
+.col_inner img {
+    width: 50%;
+    margin: auto;
+}
+.col_inner a {
+    text-decoration: none;
+    color: blue;
+}
+.col_inner a span {
+    display: none;
+}
+.col_inner a:hover span {
+    display: contents;
+}
+.col_inner a:hover {
+    color: darkmagenta;
+    text-decoration: underline;
+}
+.col_inner:last-child img {
+    display: block;
 }
