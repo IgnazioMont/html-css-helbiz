@@ -1,0 +1,12 @@
+/* COMMON */
+/* color: #fafafa; */
+
+.small-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    padding: 20px 0;
+}
