@@ -28,7 +28,7 @@ header nav {
     text-align: right;
 }
 header .burger-menu {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /* Menu */
@@ -109,4 +109,31 @@ header .burger-menu {
 }
 .col_inner:last-child img {
     display: block;
+    padding-top: 15px;
+}
+
+/* iPhone + bg section */
+#iPhone-bg {
+    background-image: url("../img/HelbizBanner.jpg");
+    height: 390px;
+    background-size: cover;
+}
+#iPhone-bg img {
+    height: 480px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+#info .col_phone p {
+    padding: 0;
+}
+#info .col_phone {
+    padding: 80px;
+    margin: auto;
+    width: 65%;
+}
+#info .col_phone h3 {
+    font-size: 35px;
+    font-weight: normal;
 }
