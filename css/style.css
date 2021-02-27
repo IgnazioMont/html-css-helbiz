@@ -148,6 +148,12 @@ header .burger-menu {
 
 /* Mobility section */
 /* box top */
+#mobility a {
+    color: white;
+}
+#mobility .mob_content span {
+    display: contents;
+}
 #mobility .mob_content {
     height: 450px;
     color: white;
@@ -168,15 +174,6 @@ header .burger-menu {
     background-image: url("../img/ScooterHelbiz-2400.jpg");
     background-size: cover;
 }
-@media all and (max-width: 991px) {
-    #mobility .img1 .mob_content {
-        padding: 10%;
-        margin: auto;
-    }
-    #mobility .col_inner.img1 {
-        opacity: 0.8;
-    }
-}
 
 /* box left */
 #mobility .mob_content.bg1:first-child a {
@@ -185,14 +182,13 @@ header .burger-menu {
 #mobility .mob_content.bg1 {
     background: rgb(55,55,55);
     background: linear-gradient(0deg, rgba(55,55,55,1) 0%, rgba(0,93,112,1) 78%, rgba(64,85,104,1) 100%);
-    
 }
 #mobility .mob_content h4 {
     font-size: 30px;
     font-weight: normal;
 }
 #mobility .mob_content img {
-    width: 90%;
+    width: 450px;
 }
 #mobility .col_inner.left {
     padding: 20px 10px 20px 0;
@@ -202,6 +198,31 @@ header .burger-menu {
 #mobility .col_inner.right {
     padding: 20px 0 20px 10px;
 }
-#mobility .col_inner.bg2 {
-    background-image: url("../img/ScooterHelbiz-2400.jpg");
+#mobility .mob_content.bg2 {
+    background-image: url("../img/florence-skyline-italy_l.jpeg");
     background-size: cover;
+    opacity: 0.9;
+}
+
+@media all and (max-width: 991px) {
+    #mobility .img1 .mob_content {
+        padding: 10%;
+        margin: auto;
+    }
+    #mobility .col_inner.img1 {
+        opacity: 0.8;
+    }
+    #mobility .container .col_inner.left {
+        padding-right: 0;
+    }
+    #mobility .container .col_inner.right {
+        padding: 0 0 20px 0;
+    }
+}
+
+/* helbiz family section */
+#family-bg {
+    height: 400px;
+    background-image: url("../img/Social-Banner.jpg");
+    background-size: cover;
+}
