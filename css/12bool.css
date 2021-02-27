@@ -220,7 +220,7 @@
 }
 
 /* XS */
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.999px) {
     .col-xs-1 {
       width: calc( ( 100% / 12 ) * 1);
     }

@@ -18,6 +18,10 @@ img {
 p {
     padding: 15px;
 }
+h3 {
+    font-size: 35px;
+    font-weight: normal;
+}
 
 /* HEADER */
 /* Nav */
@@ -133,10 +137,6 @@ header .burger-menu {
     margin: auto;
     width: 65%;
 }
-#info .col_phone h3 {
-    font-size: 35px;
-    font-weight: normal;
-}
 @media all and (max-width: 991px) {
     #info {
         padding-top: 200px;
@@ -221,8 +221,36 @@ header .burger-menu {
 }
 
 /* helbiz family section */
-#family-bg {
-    height: 400px;
+.family-bg {
+    height: 333px;
     background-image: url("../img/Social-Banner.jpg");
     background-size: cover;
+    position: relative;
+}
+.family-bg .hel_content {
+    background-color: white;
+    padding: 50px 105px;
+}
+.family-bg ul {
+    list-style-type: none;
+    text-align: center;
+}
+.family-bg .social-imgs a {
+    color: black;
+    font-size: 30px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+/* Social hover colors */
+.social-imgs a:hover #face {
+    color: #1877f2;
+}
+.social-imgs a:hover #insta {
+    color: #c13584;
+}
+.social-imgs a:hover #yt {
+    color: #f00;
+}
+.social-imgs a:hover #tw {
+    color: #16a2f2;
 }
