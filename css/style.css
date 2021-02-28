@@ -142,19 +142,20 @@ header .burger-menu {
     position: relative;
     top: 150px;
 }
-#info .col_phone p {
+.info .col_phone p {
     padding: 0;
 }
-#info .col_phone {
+.info .col_phone {
     padding: 80px;
     margin: auto;
     width: 65%;
 }
+/* iphone img settings for mobile */
 @media all and (max-width: 991px) {
-    #info {
+    .info {
         padding-top: 200px;
     }
-    #info .col_phone {
+    .info .col_phone {
         padding: 20px;
     }
 }
@@ -208,6 +209,8 @@ header .burger-menu {
     background-size: cover;
     opacity: 0.9;
 }
+
+/* mobility settings for mobiles */
 @media all and (max-width: 991px) {
     .mobility .img1 .mob_content {
         padding: 10%;
@@ -224,6 +227,7 @@ header .burger-menu {
     }
 }
 
+
 /* helbiz family section */
 /* bg pattern */
 .family-bg {
@@ -231,6 +235,7 @@ header .burger-menu {
     background-image: url("../img/Social-Banner.jpg");
     background-size: cover;
     position: relative;
+    margin-bottom: 20px;
 }
 .family-bg .hel_content {
     background-color: white;
@@ -255,21 +260,17 @@ footer .social-list li {
     margin-right: 0;
 }
 /* Social hover colors */
-.social-list a:hover #face {
+.social-list a:hover .face {
     color: #1877f2;
 }
-.social-list a:hover #insta {
+.social-list a:hover .insta {
     color: #c13584;
 }
-.social-list a:hover #yt {
+.social-list a:hover .yt {
     color: #f00;
 }
-.social-list a:hover #tw {
+.social-list a:hover .tw {
     color: #16a2f2;
-}
-
-main .family-bg {
-    margin-bottom: 20px;
 }
 
 
@@ -279,6 +280,10 @@ main .family-bg {
     padding: 100px 0 60px 0;
     color: white;
 }
+/* info columns */
+.cols {
+    padding-bottom: 55px;
+}
 .bg-black img {
     width: 170px;
     position: relative;
@@ -287,6 +292,10 @@ main .family-bg {
 .bg-black h2 {
     padding-top: 50px;
     font-weight: 500;
+}
+/* lists */
+.bg-black .infor {
+    display: flex;
 }
 .bg-black a {
     text-decoration: none;
@@ -306,14 +315,9 @@ main .family-bg {
     text-transform: uppercase;
     color: white;
 }
-.bg-black .info {
-    display: flex;
-}
-footer .cols {
-    padding-bottom: 55px;
-}
 
 /* social row */
+/* hover inherited + linked-in */
 footer .social {
     padding: 25px 0;
     border-top: 1px solid #808080;
@@ -328,6 +332,8 @@ footer .social-list a {
     margin-right: 15px;
     text-decoration: none;
 }
+
+/* terms + press + copyright */
 footer .social .text {
     text-align: right;
 }
@@ -355,11 +361,12 @@ footer .apps a img {
     height: 53px;
 }
 
+/* footer settings for mobiles */
 @media all and (max-width: 991px) {
     footer .small-wrapper {
         text-align: center;
     }
-    footer .cols .info ul,
+    footer .cols .infor ul,
     footer .social,
     #centered-mobile {
         margin: auto;
