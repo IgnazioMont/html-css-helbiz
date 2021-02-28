@@ -18,9 +18,20 @@ img {
 p {
     padding: 15px;
 }
+body h1, h2, h3, h4 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 45px;
+}
 h3 {
     font-size: 35px;
-    font-weight: normal;
+}
+h4 {
+    font-size: 30px;
 }
 
 /* HEADER */
@@ -66,6 +77,8 @@ header .burger-menu {
 /* Jumbotron */
 .jumbotron {
     background-image: url("../img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 520px;
     position: relative;
     color: white;
@@ -148,79 +161,71 @@ header .burger-menu {
 
 /* Mobility section */
 /* box top */
-#mobility a {
+.mobility a {
     color: white;
 }
-#mobility .mob_content span {
+.mobility .mob_content span {
     display: contents;
 }
-#mobility .mob_content {
+.mobility .mob_content {
     height: 450px;
     color: white;
     text-align: center;
     padding: 20px;
 }
-#mobility .mob_content h2 {
-    font-size: 45px;
-    font-weight: normal;
-}
-#mobility .img1 .mob_content {
+.mobility .img1 .mob_content {
     padding-left: 60%;
     padding-top: 10%;
     width: 90%;
 }
-#mobility .col_inner.img1 {
+.mobility .col_inner.img1 {
     height: 450px;
     background-image: url("../img/ScooterHelbiz-2400.jpg");
     background-size: cover;
 }
 
 /* box left */
-#mobility .mob_content.bg1:first-child a {
+.mobility .mob_content.bg1:first-child a {
     padding-right: 20px;
 }
-#mobility .mob_content.bg1 {
+.mobility .mob_content.bg1 {
     background: rgb(55,55,55);
     background: linear-gradient(0deg, rgba(55,55,55,1) 0%, rgba(0,93,112,1) 78%, rgba(64,85,104,1) 100%);
 }
-#mobility .mob_content h4 {
-    font-size: 30px;
-    font-weight: normal;
-}
-#mobility .mob_content img {
+.mobility .mob_content img {
     width: 450px;
 }
-#mobility .col_inner.left {
+.mobility .col_inner.left {
     padding: 20px 10px 20px 0;
 }
 
 /* box right */
-#mobility .col_inner.right {
+.mobility .col_inner.right {
     padding: 20px 0 20px 10px;
 }
-#mobility .mob_content.bg2 {
+.mobility .mob_content.bg2 {
     background-image: url("../img/florence-skyline-italy_l.jpeg");
     background-size: cover;
     opacity: 0.9;
 }
-
 @media all and (max-width: 991px) {
-    #mobility .img1 .mob_content {
+    .mobility .img1 .mob_content {
         padding: 10%;
         margin: auto;
     }
-    #mobility .col_inner.img1 {
+    .mobility .col_inner.img1 {
         opacity: 0.8;
     }
-    #mobility .container .col_inner.left {
+    .mobility .container .col_inner.left {
         padding-right: 0;
     }
-    #mobility .container .col_inner.right {
+    .mobility .container .col_inner.right {
         padding: 0 0 20px 0;
     }
 }
 
 /* helbiz family section */
+/* bg pattern */
 .family-bg {
     height: 333px;
     background-image: url("../img/Social-Banner.jpg");
@@ -229,28 +234,73 @@ header .burger-menu {
 }
 .family-bg .hel_content {
     background-color: white;
-    padding: 50px 105px;
+    padding: 50px 113px;
 }
+/* social list */
 .family-bg ul {
     list-style-type: none;
     text-align: center;
 }
-.family-bg .social-imgs a {
+.family-bg li {
+    display: inline-block;
+}
+.family-bg .social-list a {
     color: black;
     font-size: 30px;
     margin-right: 20px;
     text-decoration: none;
 }
+.family-bg .social-list li:last-child a {
+    margin-right: 0;
+}
 /* Social hover colors */
-.social-imgs a:hover #face {
+.social-list a:hover #face {
     color: #1877f2;
 }
-.social-imgs a:hover #insta {
+.social-list a:hover #insta {
     color: #c13584;
 }
-.social-imgs a:hover #yt {
+.social-list a:hover #yt {
     color: #f00;
 }
-.social-imgs a:hover #tw {
+.social-list a:hover #tw {
     color: #16a2f2;
+}
+
+main .family-bg {
+    margin-bottom: 20px;
+}
+
+
+/* FOOTER */
+.bg-black {
+    background-color: black;
+    padding: 100px 0 60px 0;
+    color: white;
+}
+.bg-black img {
+    width: 150px;
+    position: relative;
+    top: 0;
+}
+.bg-black h2 {
+    padding-top: 50px;
+    font-weight: 500;
+}
+.bg-black a {
+    text-decoration: none;
+    color: white;
+}
+.bg-black ul {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 55px;
+}
+.bg-black ul li {
+    line-height: 2.5;
+}
+.bg-black ul li:first-child {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
