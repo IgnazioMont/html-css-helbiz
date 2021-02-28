@@ -241,10 +241,11 @@ header .burger-menu {
     list-style-type: none;
     text-align: center;
 }
-.family-bg li {
+.family-bg li, 
+footer .social-list li {
     display: inline-block;
 }
-.family-bg .social-list a {
+.social-list a {
     color: black;
     font-size: 30px;
     margin-right: 20px;
@@ -279,7 +280,7 @@ main .family-bg {
     color: white;
 }
 .bg-black img {
-    width: 150px;
+    width: 170px;
     position: relative;
     top: 0;
 }
@@ -289,18 +290,90 @@ main .family-bg {
 }
 .bg-black a {
     text-decoration: none;
-    color: white;
+    color: #808080;
 }
 .bg-black ul {
     display: inline-block;
     list-style-type: none;
-    padding-right: 55px;
+    padding-right: 38px;
 }
 .bg-black ul li {
     line-height: 2.5;
 }
 .bg-black ul li:first-child {
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     text-transform: uppercase;
+    color: white;
+}
+.bg-black .info {
+    display: flex;
+}
+footer .cols {
+    padding-bottom: 55px;
+}
+
+/* social row */
+footer .social {
+    padding: 25px 0;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+.social-list a:hover #l-in {
+    color: #0a66c2;
+}
+footer .social-list a {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+footer .social .text {
+    text-align: right;
+}
+footer .social .terms li {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 35px;
+}
+footer .social .text .terms {
+    padding-right: 0;
+}
+footer .social .terms li a {
+    color: white;
+}
+
+/* apps button */
+footer .apps {
+    text-align: center;
+    padding: 30px 0;
+}
+footer .apps a img {
+    display: inline-block;
+    height: 53px;
+}
+
+@media all and (max-width: 991px) {
+    footer .small-wrapper {
+        text-align: center;
+    }
+    footer .cols .info ul,
+    footer .social,
+    #centered-mobile {
+        margin: auto;
+    }
+    #centered-mobile.text {
+        text-align: center;
+    }
+    #centered-mobile.text .terms li:first-child {
+        padding-left: 0;
+    }
+    #centered-social .social-list {
+        padding-right: 0;
+    }
+    footer .cols .container h2 {
+        padding: 30px 0 60px 0;
+    }
 }
